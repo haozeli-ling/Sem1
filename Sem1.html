@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Introduction to semantics</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box; 
+}
+
+body {margin:0; font-family: Arial, Helvetica, sans-serif;}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #800000;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 43%;
+  padding: 15px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+    
+.column3 {
+  float: left;
+  width: 3%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.a {
+  text-align: justify;
+  line-height:0;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top: 25px;
+}
+    
+
+div {
+  text-align: justify;
+  line-height:0;
+  padding-left:25px;
+  padding-right:25px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="a"> 
+    <h2> <span style="color: darkred;"> Introduction to semantics </span> </h2>
+</div>    
+    
+<div class="row">
+  <div class="column2">
+      <p> 
+          <strong> Instructor: </strong> 
+          <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://haozelisem.github.io/haozeli/LHZ.html" target="_blank" rel="noopener noreferrer">Haoze Li</a></span>
+      </p>
+      <p> <strong> Course description </strong> </p>
+      <p>
+          Formal Semantics is an interdisciplinary subfield of both linguistics and philosophy devoted to the study of language meaning. It studies meaning in natural language using formal tools borrowed from formal logic, mathematics and computer science. It provides explanations for:
+      </p>
+      <ul>
+          <li>
+              <p> what linguistic expressions mean </p>
+          </li>
+          <li>
+              <p> why do they mean what they mean, and </p>
+          </li>
+          <li>
+              <p>how the meaning of a complex expression is determined by the meaning of its parts</p>
+          </li>
+      </ul>
+      <p>
+          This course is designed to introduce you to some of the classical topics in Formal Semantics and the basic formal tools used to study these topics. We will also learn how to read the literature of Formal Semantics and how to conduct semantics research. Upon the completion of this course, you will be able to:
+      </p>
+       <ul>
+          <li>
+              <p> identify different types of meaning </p>
+          </li>
+          <li>
+              <p> translate linguistic expressions into model-theoretic objects </p>
+          </li>
+          <li>
+              <p> translate natural language into a formal language such as propositional logic or predicate logic </p>
+          </li>
+            <li>
+              <p> understand some fundamental issues of Formal Semantics </p>
+          </li>
+      </ul>
+      <p>
+          The course will be divided into four subject areas, with the following order of presentation.
+      </p>
+      <ul>
+          <li>
+              <p> Model-theoretic semantics: <br>
+                  Topics: Interpreting linguistic expressions in terms of a model of an actual or possible state of the world <br>
+                  Tools: Introduction to sets, functions, relations, types, etc.
+              </p>
+          </li>
+          <li>
+              <p> Nominal meaning: <br>
+                  Topics: Quantifiers, determiners, modifiers and scope <br>
+                  Tools: Predicate logic, lambda calculus, the theory of Generalized Quantifiers 
+              </p>
+          </li>
+          <li>
+              <p> Verbal meaning: <br>
+                  Topics: Verbs, adverbs, thematic roles, aspects <br>
+                  Tools: Event semantics 
+              </p>
+          </li>
+          <li>
+              <p> Intensionality: <br>
+                  Topics: Attitude verbs, modals (and conditionals, time permitting) <br>
+                  Tools: Possible world semantics 
+              </p>
+          </li>
+      </ul>
+      <p>
+          <strong> References </strong>
+      </p>
+        <ul>
+          <li>
+              <p> 
+                  Dowty, David. 1979. Word meaning and Montague grammar. Dordrecht: Reidel.
+              </p>
+          </li>
+          <li>
+              <p> Dowty, David, Robert Wall and Stanley Peters. 1981. Introduction to Montague Semantics. Dordrecht: Reidel. 
+              </p>
+          </li>
+          <li>
+              <p> von Fintel, Kai and Irene Heim. 2011. Intensional semantics. Lecture notes, MIT. 
+              </p>
+          </li>
+          <li>
+              <p> Heim, Irene and Angelika Kratzer. 1998. Semantics in generative grammar. Oxford: Blackwell. 
+              </p>
+          </li>
+          <li>
+              <p> Huang, C.T. James. 1994. Logical Form. In Government and Binding Theory and the Minimalist Program. ed. G. Webelbuth, 127—175. Oxford: Blackwell. 
+              </p>
+          </li>
+          <li>
+              <p> 
+                  Karttunen, Lauri. 1973. Presupposition in compound sentences. Linguistic Inquiry. 
+              </p>
+          </li>
+          <li>
+              <p> 
+                  Schlenker. Philippe. To appear. What it all means. Cambridge, MA: MIT. 
+              </p>
+          </li>
+          <li>
+              <p> 
+                  Partee, Barbara. 2011. Formal semantics: Origins, issues and early impact. In Baltic international yearbook of cognition, logic and communication, 1—15. 
+              </p>
+          </li>
+          <li>
+              <p> 
+                  Parson, Terence. 1990. Events in the semantics of English. Cambridge, MA: MIT press. 
+              </p>
+          </li>
+          <li>
+              <p> 
+                  Szabolcsi, Anna. 2010. Quantification. Oxford: Oxford University Press. 
+              </p>
+          </li>
+          <li>
+              <p> 
+                  蒋严、潘海华. 2005. 形式语义学引论. 中国科技出版社。 
+              </p>
+          </li>
+      </ul>
+  </div>
+  
+  <div class="column">
+      <p> <strong> Course outline </strong>  </p>
+      <p>
+          <strong> Week 1: </strong> What is Formal Semantics
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> Partee (2012); Schlenker (to appear) </p>
+          </li>
+      </ul>
+      <p>
+          <strong> Week 2: </strong> Model-Theoretic semantics: Names and verbs
+      </p>
+      <ul>
+          <li>
+              <p> 
+                  <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://github.com/haozelisem/Sem1/blob/main/Model_1.pdf" target="_blank" rel="noopener noreferrer">Lecture note</a></span> 
+              </p>
+          </li>
+          <li>
+              <p> Dowty et al (1981) chp 2 </p>
+          </li>
+      </ul>
+       <p>
+           <strong> Week 3: </strong> Model-Theoretic semantics: <em>not</em>, <em>and</em>, <em>or</em>, and <em>if</em>
+      </p>
+      <ul>
+          <li>
+              <p> 
+                  <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://github.com/haozelisem/Sem1/blob/main/Model_2.pdf" target="_blank" rel="noopener noreferrer">Lecture note</a></span>
+              </p>
+          </li>
+          <li>
+              <p> Dowty et al (1981) chp 2 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 4: </strong> Non-at-issue meaning: Presupposition
+      </p>
+      <ul>
+          <li>
+              <p> 
+                  <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://github.com/haozelisem/Sem1/blob/main/Presupposition.pdf" target="_blank" rel="noopener noreferrer">Lecture note</a></span>
+              </p>
+          </li>
+          <li>
+              <p> Schlenker (to appear) chp 11; Karttunen (1973) </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 5: </strong> No class (spring break)
+      </p>
+      <p>
+           <strong> Week 6: </strong> Variables and assignments I
+      </p>
+      <ul>
+          <li>
+              <p> 
+                  <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://github.com/haozelisem/Sem1/blob/main/Variables%20and%20assignments.pdf" target="_blank" rel="noopener noreferrer">Lecture note</a></span>
+              </p>
+          </li>
+          <li>
+              <p> Dowty et al (1981) chp 3 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 7: </strong> Variables and assignments II
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note (same as Week 6) </p>
+          </li>
+          <li>
+              <p> Dowty et al (1981) chp 3 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 8: </strong> Lambda calculus: Relative clauses
+      </p>
+      <ul>
+          <li>
+              <p> 
+                  <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://github.com/haozelisem/Sem1/blob/main/Lambda.pdf" target="_blank" rel="noopener noreferrer">Lecture note</a></span>
+              </p>
+          </li>
+          <li>
+              <p> Heim and Kratzer (1998) chp 2, 5 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 9: </strong> Generalized quantifiers: Basics
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> Szabolcsi (2010) chp 2; Heim and Kratzer (1998) chp 7 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 10: </strong> Logical Form
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> Huang (1994) </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 11: </strong> Generalized quantifiers: Universal properties
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> Szabolcsi (2010) chp 4 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 12: </strong> Generalized quantifiers: Variation of scope taking
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> Szabolcsi (2010) chp 6 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 13: </strong> Event semantics: Basics
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> Parsons (1990) chp 2, 5 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 14: </strong> Aspects
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> Dowty (1979) chp 2 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 15: </strong> Intensional semantics: Basics
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> von Fintel and Heim (2011) chp 1, 2 </p>
+          </li>
+      </ul>
+      <p>
+           <strong> Week 16: </strong> Modality
+      </p>
+      <ul>
+          <li>
+              <p> Lecture note </p>
+          </li>
+          <li>
+              <p> von Fintel and Heim (2011) chp 3 </p>
+          </li>
+      </ul>
+  </div>
+  
+
+</div>
+
+</body>
+</html>
